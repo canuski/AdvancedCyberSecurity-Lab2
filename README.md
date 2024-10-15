@@ -19,7 +19,8 @@
 Script in repo
 
 ## Shamir Secrect Sharing
-Ik heb de sslib libray gebruikt in python dit ging zeer vlot. Het enigste dat mij in de war bracht was de lector die sprak over een cipher text. Ik zal dit zeker navragen in de les!
+Ik heb de sslib libray gebruikt in python dit ging zeer vlot. 
+Het enigste dat mij in de war bracht was de lector die sprak over een cipher text. Ik zal dit zeker navragen in de les!
 
 Share 1: '1-mN1BhzYKdrBA6Ix3SARc1xHlkIgQHimj'
 Link naar paste.ee met share 2 erop: https://paste.ee/p/m9E3K
