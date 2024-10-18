@@ -13,8 +13,14 @@
 - E2EE en hoe past het in mijn model?
     - E2EE is wanneer berichten worden versleuteld op het moment dat ze door de afzender worden verzonden en pas ontsleuteld door de ontvanger. Zelfs de servers ziet de inhoud niet.
     - Het zou bij mij helpen tegen mensen die gegevens willen stelen, want de gegevens zijn altijd versleuteld.
-
-
+    - Bescherming tegen **malicous application user**: 
+        - E2EE voorkomt dat hij toegang krijgt tot andere mensen hun berichten. Zelfs als hij in de database geraakt of als hij netwerk traffiek onderschept.
+    - Bescherming tegen **malicous cloud admin**:
+        - E2EE voorkomt dat hij niet de berichten in de server kan lezen. 
+    - Bescherming tegen **malicous inturder**:
+        - E2EE voorkomt dat de intruder niet de berichten kan lezen zelfs al heeft hij fysiek toegang tot de berichten.
+     
+      
 ## Homomorphic encryption
 Deze code (in homomorphic.py) maakt gebruik van de Tenseal libraries om veilige berekeningen uit te voeren met behulp van homomorphic encryptie. Hier is een korte uitleg van de belangrijkste onderdelen:
 
@@ -54,6 +60,11 @@ In mijn script ```low-level-kyber.py``` probeer ik dit na te boosten. Ik leg kor
 2. Creeren van een Box: ```box = Box(private_key, public_key)```
 3. Bericht Encrypteren: ```encrypted_message = box.encrypt(message)```
 4. Afdrukken van de resultaten.
+
+#### Decrypteren
+Om de zin te decryteren moet je:
+-	De originele zin hebben.
+-	De publieke key die hoort bij de private key die is gebruikt voor de encryptie.
 
 ## Moeilijkheden
 - Post Quantum werkende krijgen (ik heb zelfs mijn WSL kunnen kapot krijgen).
